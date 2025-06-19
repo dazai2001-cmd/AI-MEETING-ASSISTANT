@@ -147,5 +147,6 @@ All processing is **local** and private.
 - [ ] Dockerize for easy deployment
 - [ ] Write unit and integration tests
 - [ ] More sample data (anonymized real meetings, longer transcripts, etc.)
+- [ ] Rebuild the application with a production-grade stack (e.g., React, CSS, HTML, Flask, FastAPI) for better scalability and deployment beyond the MVP (currently on Streamlit)
 
 Have suggestions? Open an issue or pull request!
