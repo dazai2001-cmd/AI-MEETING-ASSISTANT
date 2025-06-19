@@ -128,10 +128,24 @@ All processing is **local** and private.
 
 ---
 
-## License
-
-MIT License (see LICENSE file).
+**Questions or contributions? Open an issue or pull request!**
 
 ---
 
-**Questions or contributions? Open an issue or pull request!**
+## Improvements / To Do
+
+- [ ] Add user authentication (so multiple people can use the app with separate data)
+- [ ] Export meeting summaries/action items to PDF or CSV
+- [ ] Auto-generate email drafts for employees summarizing their action items
+- [ ] Integrate with Google Calendar or Outlook for meeting scheduling
+- [ ] Add “reminder” feature for action items with due dates
+- [ ] Support for multi-language transcription and translation
+- [ ] UI: Drag-and-drop audio upload, better mobile responsiveness
+- [ ] Automatic speaker identification in transcripts
+- [ ] Option to fine-tune models or use different open-source LLMs
+- [ ] Add “edit meeting” and “delete meeting” options in the UI
+- [ ] Dockerize for easy deployment
+- [ ] Write unit and integration tests
+- [ ] More sample data (anonymized real meetings, longer transcripts, etc.)
+
+Have suggestions? Open an issue or pull request!
