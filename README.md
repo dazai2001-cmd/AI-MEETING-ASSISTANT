@@ -1,143 +1,137 @@
 # AI Meeting Assistant
 
-A Streamlit app for transcribing, summarizing, extracting action items, and querying meetings—all on your machine using open-source AI (Whisper and Llama 3 via Ollama).
+A private, local-first Streamlit app for transcribing, summarizing, extracting action items, and querying your meeting recordings—using open-source AI models (Whisper & Llama 3 via Ollama).
 
 ---
 
 ## Features
 
-- Upload meeting **audio files** (MP3, WAV, M4A) or **paste transcripts**
-- **Transcribes** speech to text (OpenAI Whisper, local)
-- **Summarizes meetings** and **extracts action items** (Llama 3 via Ollama, local)
-- **Saves meetings** for later reference
-- **Ask questions** about a meeting, all meetings, or have a running chat (AI-powered Q&A)
-- **No data leaves your PC**—runs completely locally
+* Upload **meeting audio** (MP3, WAV, M4A) or **paste text transcripts**
+* Accurate, fast **speech-to-text** (Whisper, runs locally)
+* Automated **meeting summaries** and **action item extraction** (Llama 3 via Ollama, runs locally)
+* Save, browse, and organize meetings with summaries, transcripts, and action lists
+* **Ask questions** about any meeting, or search all meetings with AI
+* **Conversational Q\&A**: Keep a running chat about any meeting
+* **All data is private**: nothing sent to the cloud!
 
 ---
 
-## Setup & Installation
+## Quick Start
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/dazai2001-cmd/AI-MEETING-ASSISTANT
+git clone https://github.com/your-username/ai-meeting-assistant.git
 cd ai-meeting-assistant
-2. Install Python dependencies
-Python 3.8+ required.
-(Optional but recommended: Create a virtual environment.)
+```
 
-sh
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+### 2. Install Python Packages
+
+Python 3.8+ recommended.
+
+```sh
 pip install -r requirements.txt
-3. Install Whisper and dependencies
-If not installed by the requirements:
+```
 
-sh
-Copy
-Edit
-pip install git+https://github.com/openai/whisper.git
-Note: Whisper requires ffmpeg to be installed system-wide.
+> **Note:** Whisper needs [ffmpeg](https://ffmpeg.org/) installed on your system.
 
-4. Install and set up Ollama (Llama 3)
-Download and install Ollama for your OS
+### 3. Install and Start Ollama
 
-Pull the Llama 3 model:
+* [Download Ollama](https://ollama.com/download) and install for your OS.
 
-sh
-Copy
-Edit
-ollama pull llama3
-Start the Ollama server:
+* Download the Llama 3 model:
 
-sh
-Copy
-Edit
-ollama serve
-Ollama should run by default at http://localhost:11434
+  ```sh
+  ollama pull llama3
+  ```
 
-5. Run the app
-sh
-Copy
-Edit
+* Start the Ollama server:
+
+  ```sh
+  ollama serve
+  ```
+
+### 4. Run the App
+
+```sh
 streamlit run app.py
-Visit http://localhost:8501 in your browser.
+```
 
-Directory Structure
-arduino
-Copy
-Edit
+Open [http://localhost:8501](http://localhost:8501) in your browser.
+
+---
+
+## Example Data
+
+Example transcripts and sample audio files are included:
+
+* `examples/transcripts/project_launch_2024-06-10.txt`
+* `examples/transcripts/retrospective_2024-06-18.txt`
+* `examples/audio/` (add your own .wav/.mp3 if needed)
+
+---
+
+## Directory Structure
+
+```
 ai-meeting-assistant/
-│
 ├── app.py
 ├── requirements.txt
 ├── README.md
-│
 ├── examples/
 │   ├── transcripts/
-│   │   ├── project_launch_2024-06-10.txt
-│   │   └── retrospective_2024-06-18.txt
 │   └── audio/
-│       ├── project_launch_2024-06-10.wav
-│       └── retrospective_2024-06-18.wav
-│
 ├── assets/
-│   └── screenshots/    # (optional)
-│
+│   └── screenshots/
 └── LICENSE
-Example Data
-Example transcripts in examples/transcripts/
+```
 
-Example audio files in examples/audio/
+---
 
-You can create your own or use the provided samples to test the app.
+## Requirements
 
-Requirements
-Python 3.8+
+* Python 3.8+
+* Streamlit
+* Whisper (from OpenAI, plus PyTorch and ffmpeg)
+* Ollama (local LLM server for Llama 3)
+* requests
 
-Streamlit
+Install all Python requirements with:
 
-Whisper
-
-PyTorch
-
-Ollama (for local Llama 3 model)
-
-ffmpeg (system-level, for audio support)
-
-requests
-
-Install Python libraries:
-
-sh
-Copy
-Edit
+```sh
 pip install -r requirements.txt
-Usage
-Upload an audio file or paste a meeting transcript.
+```
 
-Transcribe (if audio), summarize, and extract action items.
+---
 
-Save meetings and browse past meetings.
+## Usage
 
-Ask questions:
+1. **Upload** an audio file or paste a meeting transcript.
+2. **Transcribe** (if audio), **summarize**, and **extract action items**.
+3. **Save** meetings and browse past meetings.
+4. **Ask questions**: about a single meeting, across all meetings, or with chat.
 
-About a single meeting
+All processing is **local** and private.
 
-Search across all meetings
+---
 
-Use the conversational chat for a Q&A history
+## Troubleshooting
 
-All processing is local and private.
+* **Ollama connection errors?**
+  Make sure `ollama serve` is running and the Llama 3 model is downloaded.
 
-Troubleshooting
-Ollama not connecting?
-Ensure ollama serve is running and the Llama 3 model is downloaded.
+* **Whisper/ffmpeg errors?**
+  Ensure `ffmpeg` is installed and available in your system PATH.
 
-Whisper/ffmpeg errors?
-Make sure ffmpeg is installed and in your system PATH.
+* **Slow performance?**
+  Both models can run on CPU, but will be faster if you have a GPU.
 
-CPU vs GPU:
-Whisper and Llama 3 run faster on a GPU, but work on CPU as well.
+---
+
+## License
+
+MIT License (see LICENSE file).
+
+---
+
+**Questions or contributions? Open an issue or pull request!**
