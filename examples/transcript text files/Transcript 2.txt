@@ -1,0 +1,12 @@
+[Manager]: Welcome, team. Let’s start with last sprint’s challenges.
+[Sarah]: We missed our deadline due to some API issues.
+[Alex]: The backend server crashed twice. I’ll schedule a fix for this week.
+[Priya]: Marketing materials were delayed, but are now approved.
+[Manager]: Alex, make sure the server patch is done by Thursday. Sarah, update the client once it’s fixed.
+[Sarah]: Will do.
+[Tom]: We received good feedback from users on the new dashboard.
+[Manager]: Great. Let’s send a thank-you note to our early adopters. Tom, draft and share it tomorrow.
+[Priya]: I’ll post an update on social media as well.
+[Manager]: Any blockers for the next sprint?
+[Alex]: None from development.
+[Manager]: Perfect. Next meeting is Monday at 9:30 AM.

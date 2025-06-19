@@ -1,0 +1,13 @@
+[Manager]: Good morning, everyone. Let's discuss the upcoming product launch. First, marketing.
+[Priya]: The campaign will start on June 20th. Social media posts and ads are scheduled.
+[Tom]: Should I prepare the email list for the initial announcement?
+[Manager]: Yes, Tom, please have it ready by next Monday.
+[Sarah]: Do we have all the product images?
+[Priya]: I'm waiting for two more from the design team. I’ll follow up today.
+[Alex]: Our inventory is ready. Shipping can begin June 22nd.
+[Manager]: Perfect. Priya, once you have all images, send them to Tom. 
+[Priya]: Will do.
+[Manager]: Any other points?
+[Tom]: Should we arrange a launch event?
+[Manager]: Let's plan for a virtual event. Tom, research options and share with the team by Friday.
+[Manager]: Thanks, everyone. Let’s reconvene next Tuesday at 10 AM.
